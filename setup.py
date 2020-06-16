@@ -69,8 +69,9 @@ setup(
     install_requires=[
       # make sure it matches requirements.txt
       'pygit2==1.2.0', # requires libgit2 1.0
-      'clint>=0.3.6',
-      'sh>=1.11' if sys.platform != 'win32' else 'pbs>=0.11'
+      'clint==0.5.1',
+      'sh==1.12.14' if sys.platform != 'win32' else 'pbs==0.110',
+      'argcomplete>=1.11.1'
     ],
     license='MIT',
     classifiers=[
